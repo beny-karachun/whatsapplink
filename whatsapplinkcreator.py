@@ -16,6 +16,4 @@ message = st.text_input("Enter your custom message")
 submit = st.button("Generate")
 if submit and message and number:
  st.success("Your custom link is: " + whatsappAPIlink(number,message))
-else:
-    st.exception("Fill out both your number and your custom message!")
 
