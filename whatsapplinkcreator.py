@@ -15,7 +15,7 @@ with st.container():
  st.title("Custom WhatsApp message URL")
  number = st.text_input("Enter your phone number")
  message = st.text_input("Enter your custom message")
- option = st.selectbox("What is your country of residence?", country)
+ option = st.selectbox("What is your country of residence?", countries)
  submit = st.button("Generate")
  if submit and message and number:
   st.success("Your custom link is: " + whatsappAPIlink(number,message))
