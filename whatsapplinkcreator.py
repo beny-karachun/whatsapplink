@@ -1,6 +1,7 @@
 import streamlit as st
 
 
+
 def whatsappAPImessage(message):
    return message.replace(" ","%20")
 def whatsappAPInumber(number):
@@ -13,6 +14,8 @@ def whatsappAPIlink(number,message):
 number = st.text_input("Enter your phone number")
 message = st.text_input("Enter your custom message")
 submit = st.button("Generate")
-if submit:
+if submit and message and number:
  st.success("Your custom link is: " + whatsappAPIlink(number,message))
+else:
+    st.exception("Fill out both your number and your custom message!")
 
