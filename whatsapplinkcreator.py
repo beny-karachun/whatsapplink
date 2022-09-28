@@ -10,7 +10,7 @@ def whatsappAPIlink(number,message):
     
     return "https://wa.me/" + (whatsappAPInumber(number)) +  "?text=" + (whatsappAPImessage(message))
 
-st.title("Custom WhatsApp message link creator")
+st.title("Custom WhatsApp message URL")
 number = st.text_input("Enter your phone number")
 message = st.text_input("Enter your custom message")
 submit = st.button("Generate")
