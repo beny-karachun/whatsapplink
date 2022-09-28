@@ -1,5 +1,4 @@
 import streamlit as st
-import countryinfo
 
 
 def whatsappAPImessage(message):
