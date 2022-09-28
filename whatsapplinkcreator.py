@@ -17,5 +17,5 @@ submit = st.button("Generate")
 if submit and message and number:
  st.success("Your custom link is: " + whatsappAPIlink(number,message))
 if submit and not(message and number):
-    st.exception("Fill out both of the fields!")
+    st.error("Fill out both fields!")
 
