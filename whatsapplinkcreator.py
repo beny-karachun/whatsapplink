@@ -27,3 +27,5 @@ with st.container():
     st.error("Fill out both fields!")
  if submit and message and not(number):
     st.error("Fill out the number field!")
+ elif submit and number and not(message):
+   st.error("Fill out the message field!")
